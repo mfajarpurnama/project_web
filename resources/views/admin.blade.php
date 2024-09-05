@@ -10,14 +10,14 @@
         body {
             font-family: 'Orbitron', sans-serif;
             background-color: #000;
-            color: #fff; 
+            color: #fff;
             margin: 0;
             padding: 0;
         }
 
-       
+
         .navbar {
-            background: linear-gradient(135deg, #333, #555); 
+            background: linear-gradient(135deg, #333, #555);
             padding: 10px 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             position: fixed;
@@ -30,21 +30,21 @@
             color: #c0c0c0;
             font-size: 1.8em;
             font-weight: 700;
-            text-shadow: 0 0 10px rgba(192, 192, 192, 0.8); 
+            text-shadow: 0 0 10px rgba(192, 192, 192, 0.8);
         }
         .navbar-nav .nav-link {
-            color: #c0c0c0; 
+            color: #c0c0c0;
             font-size: 1.1em;
             margin-left: 20px;
             transition: color 0.3s, text-shadow 0.3s;
         }
 
         .navbar-nav .nav-link:hover {
-            color: #ffd700; 
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); 
+            color: #ffd700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
         }
 
-        
+
         .container {
             padding-top: 80px;
         }
@@ -52,17 +52,17 @@
         .admin-header {
             text-align: center;
             padding: 20px;
-            background: #333; 
-            color: #c0c0c0; 
+            background: #333;
+            color: #c0c0c0;
             border-bottom: 4px solid #c0c0c0;
-            margin-bottom: 30px; 
+            margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
         }
 
-      
+
         .table-responsive {
-            background-color: #111; 
+            background-color: #111;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
@@ -81,7 +81,7 @@
         }
 
         th {
-            background-color: #000; 
+            background-color: #000;
             color: #c0c0c0;
             text-shadow: 0 0 10px rgba(192, 192, 192, 0.8);
         }
@@ -93,28 +93,29 @@
 
         tr:hover td {
             background-color: #555;
-            color: #fff; 
+            color: #fff;
         }
 
-    
+
         .btn-primary {
-            background-color: #c0c0c0; 
-            border-color: #000; 
-            color: #000; 
+            background-color: #c0c0c0;
+            border-color: #000;
+            color: #000;
             font-size: 1em;
-            padding: 10px 20px;
+            padding: 10px 30px;
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
             display: inline-block;
             text-align: center;
-            margin: 5px; 
+            margin: 5px;
+            /* margin-left: 80%; */
         }
 
         .btn-primary:hover {
-            background-color: #333; 
-            color: #fff; 
-            transform: scale(1.05); 
-            box-shadow: 0 4px 8px rgba(192, 192, 192, 0.4); 
+            background-color: #ffd700;
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(192, 192, 192, 0.4);
         }
     </style>
 </head>
@@ -127,7 +128,7 @@
         <div class="table-responsive">
             <div class="text-center mb-4">
                 <h2 class="text-center mb-4">Transaction List</h2>
-                <a href="user/viewcreate"><button class="btn btn-primary">Add New Transaction</button></a>
+                <img src="storage/image/user.png" alt="">
                 <a href="/logout"><button class="btn btn-primary">Logout</button></a>
             </div>
             <table>

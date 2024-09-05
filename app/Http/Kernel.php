@@ -54,9 +54,10 @@ class Kernel extends HttpKernel
      */
     protected $middlewareAliases = [
         'auth' => \App\Http\Middleware\Authenticate::class,
+        // 'level' => \App\Http\Middleware\LevelMiddleware::class,
+        'role' => \App\Http\Middleware\RoleMiddleware::class,
         
-        'StatusLogin' => \App\Http\Middleware\StatusLogin::class,
-        'adminauth' => \App\Http\Middleware\adminauth::class,
+        // 'adminauth' => \App\Http\Middleware\adminauth::class,
         
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'auth.session' => \Illuminate\Session\Middleware\AuthenticateSession::class,
@@ -68,4 +69,5 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
     ];
+    
 }

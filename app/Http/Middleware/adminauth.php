@@ -14,11 +14,12 @@ class adminauth
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next)
     {
-        if (Auth::user()->level != 'admin') {
-            return redirect('/user');
+        if (auth()->user() && auth()->user()->is_admin) {
+            return $next($request);
         }
-        return $next($request);
+
+        return redirect('/');
     }
 }
